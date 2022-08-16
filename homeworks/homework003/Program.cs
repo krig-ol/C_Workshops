@@ -22,14 +22,14 @@ void CheckingNumber(string number)
 }
 
 if (number!.Length == 5)
-    {
-        CheckingNumber(number);
-    }
+{
+    CheckingNumber(number);
+}
 while (number!.Length < 5 || number!.Length > 5)
-    {
-        Console.Write($"Введите пятизначное число: ");
-        goto M;
-    }
+{
+    Console.Write($"Введите пятизначное число: ");
+    goto M;
+}
 
 
 
