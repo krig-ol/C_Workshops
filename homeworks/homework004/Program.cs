@@ -70,3 +70,28 @@ for (int i = 0; i < array1.Length; i++)
     array1[i] = myRandom1.Next(0, 100);
 }
 Console.WriteLine("Mассивом из " + number1 + " случайных чисел будет: [{0}]\n", string.Join(", ", array1));
+
+Console.WriteLine("С помощью цикла foreach и ввода с клавиатуры чисел через запятую:\n");
+
+Console.Write("Введите через запятую числа для создания массива: ");
+
+string? number2 = Console.ReadLine(); // 1, 2, 5, 7, 19
+string[] array2 = new string[number2!.Length];
+int index = 0;
+foreach (var item in number2) // 1 , 2 , 5 , 7 , 1 9
+{
+    if (item != ',' || item != ' ')
+    {
+        array2[index] += item.ToString(); // складывает числа строки
+    }
+    else
+    {
+        index++;
+    }
+}
+Console.Write($"Mассивом введенных чисел '{number2}' будет: [");
+for (int i = 0; i <= index - 1; i++)
+{
+    Console.Write(array2[i] + ", ");
+}
+Console.Write(array2[index] + "]");
