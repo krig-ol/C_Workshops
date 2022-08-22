@@ -1,7 +1,7 @@
 ﻿// Создаем консольную текстовую РПГ
 class Program //Класс Program указывает на принодлежность к файлу Program.cs
 {
-    static void WriteSelect(string[] args) // Функция обработки приведенных значений
+    static void WriteSelect(string[] args) // Метод обработки приведенных значений
     {
         for (int i = 0; i < args.Length - 1; i++)
         {
