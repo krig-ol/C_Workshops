@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-// Console.Clear(); // Очищаем консоль
+Console.Clear(); // Очищаем консоль
 Console.WriteLine("Урок 5. Функции продолжение (Домашнее задание)\n");
 
 
