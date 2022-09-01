@@ -30,9 +30,9 @@
 
         Console.Write("Введите число: ");
 
-        string number = Console.ReadLine();
+        string? number = Console.ReadLine();
 
-        if (number.Length > 2)
+        if (number!.Length > 2)
             Console.WriteLine("третья цифра -> " + number[2] + "\n");
         else
             Console.WriteLine("-> третьей цифры нет\n");
