@@ -5,6 +5,7 @@ Console.WriteLine("Задача 64:\nЗадайте значения M и N. Н�
 
 // M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 // M = 4; N = 8. -> ""4, 6, 7, 8""
+
 int InputInt(string output)
 {
     Console.Write(output);
